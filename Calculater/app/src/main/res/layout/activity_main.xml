@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B17070714"
+            android:textColor="#fff"
+            android:textSize="13pt"
+            android:textAlignment="center"
+            android:layout_marginVertical="20dp"
+            android:background="#33111111"/>
+
+        <TextView
+        android:id="@+id/input"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:height="55dp"
+        android:text=""
+            android:textColor="#fff"
+        android:textAlignment="textEnd"
+        android:textSize="16pt"
+        />
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:height="40dp"
+            android:text=""
+            android:textColor="#aaa"
+            android:textAlignment="textEnd"
+            android:textSize="13pt"
+
+            />
+    </LinearLayout>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+
+                <TableLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="7"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="9"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="4"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="5"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="6"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-"
+                                android:onClick="onClick"
+                                android:textSize="18pt"
+                                >
+
+                            </Button>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+                            <Button
+                                android:onClick="onClick"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:onClick="onClick"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:onClick="onClick"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="3"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="*"
+                                android:onClick="onClick"
+                                android:textSize="18pt"
+                                >
+
+                            </Button>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+                            <Button
+                                android:textStyle="bold"
+                                android:onClick="onClick"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="."
+                                android:textSize="18pt"
+                                android:textColor="@color/colorAccent">
+
+                            </Button>
+                            <Button
+                                android:onClick="onClick"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textSize="18pt">
+
+                            </Button>
+                            <Button
+                                android:id="@+id/calc"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:text="="
+                                android:textSize="18pt"
+                                >
+
+                            </Button>
+                            <Button
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="/"
+                                android:onClick="onClick"
+                                android:textSize="18pt">
+
+                            </Button>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:paddingHorizontal="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="sin("
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="cos("
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="tan("
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="%"
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="log("
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="^"
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+
+
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="("
+                            android:onClick="onClick"
+                            android:textSize="18pt">
+
+                        </Button>
+                        <Button
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text=")"
+                            android:onClick="onClick"
+                            android:textSize="18pt"
+                            >
+
+                        </Button>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>
